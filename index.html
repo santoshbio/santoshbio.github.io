@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Santosh Gothwal</title>
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Background image only on large screens */
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen">
+    <style>
+        @keyframes marquee-left {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Optional: pause on hover */
+        .marquee:hover .marquee-track {
+            animation-play-state: paused;
+        }
+    </style>
+    <div id="navbar"></div>
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <!-- SCREEN 1: Hero (3 items equally spaced) + Logos at bottom -->
+            <section id="hero" class="min-h-screen flex flex-col pt-20">
+                <main class="flex-1 px-4">
+                    <div class="container mx-auto h-full">
+                        <!-- Grid: 1 column mobile, 2 columns at lg+ -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 h-full items-center">
+
+                            <div class="order-2 lg:order-1 flex flex-col items-center justify-center text-center
+         gap-y-3
+         lg:gap-y-4
+         lg:items-start lg:justify-center lg:text-left
+         lg:ml-[6vw] xl:ml-[8vw]
+         min-h-0 lg:min-h-[60vh]">
+                                <div class="text-lg">
+                                    Hi there! I’m <span class="font-bold">Santosh</span>
+                                    Gothwal
+                                </div>
+                                <div class="text-3xl md:text-5xl font-normal leading-tight">
+                                    <span class="font-bold">DNA Research for Novel Chemotherapy Target Development and
+                                        Cancer Treatments</span>
+                                </div>
+                            </div>
+
+                            <div class="order-1 lg:order-2 flex justify-center lg:justify-end lg:items-start">
+
+                                <img src="portrait.jpg" alt="Portrait / accent" loading="eager" decoding="async" class="
+      w-[180px] sm:w-[220px]        /* mobile size */
+      lg:w-full lg:max-w-[520px]    /* desktop size */
+      object-contain
+      rounded-2xl
+      shadow-md lg:shadow-lg
+      opacity-90
+      lg:mt-4
+    " />
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </main>
+
+                <!-- Logos section -->
+                <!-- Logos section -->
+                <section id="logos" class="bg-[#EDEEE7] py-8 flex-shrink-0">
+                    <div class="container mx-auto px-4">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-10 items-center justify-center">
+
+                            <img src="image6.png" alt="Image 6"
+                                class="max-h-[90px] max-w-[140px] w-auto object-contain mx-auto rounded" />
+
+                            <img src="image7.png" alt="Image 7"
+                                class="max-h-[90px] max-w-[140px] w-auto object-contain mx-auto rounded" />
+
+                            <img src="image8.png" alt="Image 8"
+                                class="max-h-[90px] max-w-[140px] w-auto object-contain mx-auto rounded" />
+
+                            <!-- <img src="image9.png" alt="Image 9"
+           class="max-h-[90px] max-w-[140px] w-auto object-contain mx-auto rounded" /> -->
+
+                            <img src="image10.png" alt="Image 10"
+                                class="max-h-[90px] max-w-[140px] w-auto object-contain mx-auto rounded" />
+
+                            <!-- <img src="image11.png" alt="Image 11"
+           class="max-h-[90px] max-w-[140px] w-auto object-contain mx-auto rounded" /> -->
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+            </section>
+
+            <section class="bg-white flex flex-col gap-10 px-6 py-12">
+
+                <!-- Top Highlight Block -->
+                <div class="bg-[#EDEEE7] text-base md:text-lg rounded-3xl max-w-3xl mx-auto px-6 py-5">
+                    Accomplished molecular biologist with deep expertise
+                    in human genetics, DNA repair, antibody generation,
+                    and cancer chemotherapeutic resistance. I’ve led
+                    cutting-edge research projects at top institutions
+                    like Osaka University and Kyoto University, under
+                    the mentorship of Nobel Laureate Prof. Tasuku Honjo.
+                </div>
+
+                <!-- Two Dark Cards Row -->
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-12 justify-center items-stretch">
+
+                    <!-- Left Card -->
+                    <div class="bg-[#4C4C4C] text-white rounded-3xl max-w-xl w-full px-8 py-6 shadow-md">
+                        <div class="text-2xl md:text-3xl font-bold mb-3">Research Focus</div>
+                        <div class="text-base md:text-lg leading-relaxed">
+                            Development of innovative approaches to identify novel cancer therapies.<br><br>
+                            Discovery and therapeutic application of intrinsic tumor suppressor mechanisms in
+                            Germinal center B cells.<br><br>
+                            Integration of clinical data with basic research to validate drug targets.
+                        </div>
+                    </div>
+
+                    <!-- Right Card -->
+                    <div class="bg-[#4C4C4C] text-white rounded-3xl max-w-xl w-full px-8 py-6 shadow-md">
+                        <div class="text-2xl md:text-3xl font-bold mb-3">Professional Strengths</div>
+                        <div class="text-base md:text-lg leading-relaxed">
+                            Exceptional research writing and technical troubleshooting.<br><br>
+                            Proven success in securing research funding.<br><br>
+                            Advanced skills in molecular biology, genetics, and biological methodologies.<br><br>
+                            Strong leadership in project development, safety, and management.
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Third Centered Card -->
+                <div class="bg-[#EDEEE7] rounded-3xl max-w-3xl mx-auto px-8 py-6 shadow-sm">
+                    <div class="text-xl md:text-2xl font-semibold text-center mb-3">
+                        Industry Impact
+                    </div>
+
+                    <ul class="text-base md:text-lg leading-relaxed list-disc pl-5">
+                        <li>Collaborative work with pharmaceutical partners on drug discovery</li>
+                        <li>Translating foundational science into impactful therapeutic strategies</li>
+                        <li>Consulting and technical expertise in cancer biology</li>
+                        <li>Contributions to R&D, education, and research advisory roles</li>
+                    </ul>
+                </div>
+
+            </section>
+            <section class="bg-orange-500 text-white py-20 px-6 mt-10">
+                <div class="max-w-4xl mx-auto text-center">
+
+                    <h2 class="text-3xl md:text-5xl font-bold mb-6">
+                        Get in Touch
+                    </h2>
+
+                    <p class="text-base md:text-lg mb-10 leading-relaxed">
+                        Contact us to find out how Santosh’s team could help your drug
+                        discovery and development projects today.
+                    </p>
+
+                    <a href="/contact.html"
+                        class="inline-block bg-white text-gray-800 font-medium px-8 py-3 rounded-lg shadow hover:bg-gray-100 transition">
+                        Let’s Talk
+                    </a>
+
+                </div>
+            </section>
+            <div id="footer"></div>
+
+        </div>
+    </div>
+
+    <script src="common/include.js"></script>
+
+    <script>
+        loadHTML("navbar", "common/navbar.html").then(() => {
+
+            const navToggle = document.getElementById('navToggle');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const backdrop = document.getElementById('backdrop');
+
+            function openMenu() {
+                mobileMenu.classList.remove('scale-y-0', 'opacity-0');
+                mobileMenu.classList.add('scale-y-100', 'opacity-100');
+
+                backdrop.classList.remove('opacity-0', 'pointer-events-none');
+                backdrop.classList.add('opacity-100');
+            }
+
+            function closeMenu() {
+                mobileMenu.classList.add('scale-y-0', 'opacity-0');
+                mobileMenu.classList.remove('scale-y-100', 'opacity-100');
+
+                backdrop.classList.add('opacity-0', 'pointer-events-none');
+                backdrop.classList.remove('opacity-100');
+            }
+
+            navToggle?.addEventListener('click', () => {
+                const isOpen = mobileMenu.classList.contains('scale-y-100');
+                isOpen ? closeMenu() : openMenu();
+            });
+
+            backdrop?.addEventListener('click', closeMenu);
+        });
+
+        loadHTML("footer", "common/footer.html");
+    </script>
+    <!-- GSAP core (local) -->
+    <script src="assets/gsap-public/minified/gsap.min.js"></script>
+
+    <!-- Plugins (local copies you have) -->
+    <script src="assets/gsap-public/minified/ScrollTrigger.min.js"></script>
+    <script src="assets/gsap-public/minified/ScrollSmoother.min.js"></script>
+
+    <script>
+        // Register after loading files
+        gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+    </script>
+    <script>
+        // Create the smoother first
+        const smoother = ScrollSmoother.create({
+            smooth: 0.8,       // seconds to catch up to native scroll
+            smoothTouch: 0.1,  // slight smoothing on touch
+            effects: true      // enables data-speed / data-lag parallax
+        });
+
+        // Example: parallax speed attributes (add to any element)
+        // <div data-speed="0.6"></div>  // slower than scroll
+        // <div data-speed="1.5"></div>  // faster than scroll
+    </script>
+    <script>
+        // Reveal logos one-by-one as the band enters view
+        gsap.from("#logos .grid img", {
+            opacity: 0,
+            x: -24,
+            duration: 0.6,
+            ease: "power2.out",
+            stagger: {
+                each: 0.12,     // delay between each logo
+                from: "start"   // left-to-right order
+            },
+            scrollTrigger: {
+                trigger: "#logos",
+                start: "top 91%",
+                toggleActions: "play none none reverse", // replay when scrolling back up
+            }
+        });
+    </script>
+</body>
+
+</html>

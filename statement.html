@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Research Statement — Santosh Gothwal</title>
+
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen bg-white">
+
+    <!-- NAVBAR -->
+    <div id="navbar"></div>
+
+    <!-- MAIN CONTENT -->
+    <main class="pt-28 pb-16 px-6">
+
+        <div class="max-w-5xl mx-auto">
+
+            <!-- Page Title -->
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Research Statement: Personalized Cancer Chemotherapy
+            </h1>
+
+            <!-- Hero Image -->
+            <div class="rounded-3xl overflow-hidden shadow mb-10">
+                <img src="images/statement/statement.png" class="w-full object-cover"
+                    alt="Research statement illustration">
+            </div>
+
+            <!-- ================= CONTENT CARD ================= -->
+            <div class="bg-[#EDEEE7] rounded-3xl p-8 md:p-12 shadow leading-relaxed text-gray-900">
+
+                <!-- Lead Paragraph -->
+                <p class="mb-8 text-lg md:text-xl
+            first-letter:text-5xl first-letter:font-bold
+            first-letter:pr-1 first-letter:float-left">
+                    Chemotherapeutic responses in cancer are strongly influenced by DNA
+                    mutations within tumor cells. Gene mutations can disrupt key cellular
+                    pathways and alter treatment outcomes. Most approved chemotherapeutic
+                    agents fall into three major categories:
+                    DNA replication inhibitors (e.g., Gemcitabine, Hydroxyurea),
+                    DNA repair inhibitors (including DNA-PK, NHEJ, and HR inhibitors),
+                    and modulators of histone modifications triggered by the DNA damage
+                    response.
+                    By understanding how these mutations interact with drug-induced
+                    cellular stress, it becomes possible to develop targeted therapies
+                    with greater sensitivity and improved safety profiles — overcoming
+                    many of the limitations associated with current chemotherapeutic agents.
+                </p>
+
+                <!-- Divider -->
+                <div class="border-t border-gray-300 my-8"></div>
+
+                <!-- Section 2 -->
+                <p class="mb-6">
+                    Drug response can vary widely depending on mutation-driven
+                    gain- or loss-of-function alterations in cancer cells.
+                    For example, mutations in <strong>TP53</strong> — one of the most
+                    frequently mutated tumor suppressors in human cancers —
+                    can promote resistance to chemotherapy.
+                    Similarly, excessive single-stranded DNA formation may enhance
+                    homologous recombination (HR), resulting in resistance to
+                    Poly(ADP-ribose) polymerase (PARP) inhibitors currently used
+                    in BRCA1/2-mutant breast cancers.
+                </p>
+
+                <!-- Section 3 -->
+                <p class="mb-6">
+                    Additional mutations affecting DNA repair factors — including
+                    HR, non-homologous end joining (NHEJ), and DNA replication
+                    pathways — may also promote drug resistance through mechanisms such as:
+                    compensatory DNA repair activity,
+                    R-loop accumulation,
+                    oncogene hyperactivation,
+                    impaired apoptosis,
+                    altered ubiquitin-ligase function,
+                    and dysregulated metastatic signaling.
+                    Collectively, these adaptations weaken the effectiveness
+                    of conventional chemotherapeutic strategies.
+                </p>
+
+                <!-- Pull Quote -->
+                <blockquote class="bg-white rounded-2xl border-l-4 border-gray-500
+                     p-6 my-10 italic text-lg text-gray-700">
+                    “Personalized chemotherapy begins with decoding
+                    mutation-driven vulnerabilities within each tumor.”
+                </blockquote>
+
+                <!-- Section 4 -->
+                <p class="mb-6">
+                    Current chemotherapy regimens for cancers such as lung cancer,
+                    breast cancer, and cholangiocarcinoma still rely heavily on
+                    broadly acting agents like gemcitabine and etoposide, without
+                    sufficient molecular precision. In contrast, personalized cancer
+                    medicine — including mutation-guided therapies and selective
+                    immunotherapies — represents the future of oncology.
+                </p>
+
+                <!-- Closing -->
+                <p>
+                    The long-term goal of this research is to develop systems capable
+                    of classifying tumor-specific mutations in individual patients
+                    and predicting optimal drug combinations <em>before</em>
+                    treatment is initiated. Such precision tools will support
+                    clinical decision-making, extend patient survival, and reduce
+                    toxicity to healthy tissues — advancing the broader vision of
+                    personalized chemotherapy and precision oncology.
+                </p>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <!-- LOAD NAVBAR + FOOTER -->
+    <script src="common/include.js"></script>
+
+    <script>
+        loadHTML("navbar", "common/navbar.html").then(() => {
+
+            const navToggle = document.getElementById('navToggle');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const backdrop = document.getElementById('backdrop');
+
+            function openMenu() {
+                mobileMenu.classList.remove('scale-y-0', 'opacity-0');
+                mobileMenu.classList.add('scale-y-100', 'opacity-100');
+                backdrop.classList.remove('opacity-0', 'pointer-events-none');
+            }
+
+            function closeMenu() {
+                mobileMenu.classList.add('scale-y-0', 'opacity-0');
+                mobileMenu.classList.remove('scale-y-100', 'opacity-100');
+                backdrop.classList.add('opacity-0', 'pointer-events-none');
+            }
+
+            navToggle?.addEventListener('click', () => {
+                const isOpen = mobileMenu.classList.contains('scale-y-100');
+                isOpen ? closeMenu() : openMenu();
+            });
+
+            backdrop?.addEventListener('click', closeMenu);
+        });
+
+        loadHTML("footer", "common/footer.html");
+    </script>
+
+</body>
+
+</html>

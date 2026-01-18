@@ -1,0 +1,174 @@
+/*text with hi I'm Santosh*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+/* navbar-custom.css */
+
+  /* Transparent background for navbar */
+  .navbar.bg-transparent {
+    background-color: transparent !important;
+    box-shadow: none; /* Remove any shadows */
+  }
+  
+  /* Custom navbar brand color */
+  .navbar .navbar-brand {
+    color: #222 !important;
+  }
+  
+  /* Custom navbar links color */
+  .navbar .nav-link {
+    color: #444 !important;
+  }
+  
+  /* Hover and focus states for links */
+  .navbar .nav-link:hover,
+  .navbar .nav-link:focus {
+    color: #E86B31 !important;
+  }
+
+  .navbar .custom-navbar-brand{
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* X-offset, Y-offset, blur, color */
+  }
+  
+  /* Custom toggler icon color for light text */
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(34,34,34, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  .custom-nav-link {
+    font-size: 20px !important;
+    font-family: 'Montserrat', sans-serif;
+  }
+/* buttom-custom.css */
+
+  .btn-custom {
+    background-color: #E86B31;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-custom:hover {
+    background-color: #ca5a29; /* Slightly darker shade */
+    color: white;
+  }
+  
+  .btn-custom-size {
+    --bs-btn-padding-y: 0.5rem;  /* Adjust vertical padding */
+    --bs-btn-padding-x: 2.0rem;  /* Adjust horizontal padding */
+    --bs-btn-font-size: 1.5rem;  /* Adjust font size */
+    /* These roughly correspond to around 171x56px button size */
+  }
+  
+  .responsive-section {
+    background-color: #EDEEE7;
+    padding: 30px 0; /* vertical padding for spacing */
+  }
+  .responsive-section .image-container .row {
+    /* Optional: vertically center images if needed */
+    align-items: center;
+  }
+  
+  .bold-text {
+    font-weight: 700; /* Bold Montserrat */
+  }
+  
+
+  
+  body {
+    background-image: url('Rectangle_15.jpg');
+    background-repeat: no-repeat;
+    background-size: 29vw auto;
+    background-position: right 25px top 0px;
+  }
+  @media (max-width: 1399px) {
+    body {
+      background-position: right 25px top 60px;
+      background-size: 33vw auto;
+    }
+  }
+  @media (max-width: 1199px) {
+    body {
+      background-size: 33vw auto;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    body {
+      background-image: none;
+    }
+  }
+  /* When screen width is 1000px or less, make image even smaller */
+  /*@media (max-width: 992px) {
+    body {
+      background-image: none; 
+    }
+  }
+  */
+  @media (min-width: 992px) {
+    .custom-text-container {
+      margin-left: 10vw;    /* Scales left margin relative to viewport width */
+      width: 50vw;          /* Scales width relative to viewport width */
+    }
+  }
+  @media (max-width: 991px) {
+    .custom-text-container , .cnt-btn
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* vertical centering if height is set */
+      align-items: center;    /* horizontal centering */
+      text-align: center;     /* center text inside elements */
+      margin-left: 0;         /* remove any left margin */
+      width: 100%;            /* full width */
+      padding-left: 1rem;     /* optional padding */
+      padding-right: 1rem;    /* optional padding */
+    }
+  }
+
+  .custom-text-container {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .custom-text-container > * {
+    margin: 5rem 0; /* evenly space between items */
+  }
+
+  .small-text {
+    font-size: clamp(16px, 2vw, 24px);
+  }
+  
+  .large-text {
+    font-size: clamp(28px, 4vw, 42px);
+  }
+
+
+  /* Default transparent navbar */
+.navbar.bg-transparent {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease;
+}
+
+/* Solid background when collapsed menu is open (showing on small screens) */
+.navbar.bg-solid {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-collapse.collapsing .nav-link.custom-nav-link,
+.navbar-collapse.show .nav-link.custom-nav-link{
+  color: white !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Collapsed menu background color */
+.navbar-collapse.show,
+.navbar-collapse.collapsing {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 0 0 0.25rem 0.25rem;
+  box-shadow: none;
+}
