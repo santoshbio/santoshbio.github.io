@@ -24,6 +24,35 @@
     <!-- NAVBAR -->
     <div id="navbar"></div>
 
+    <!-- Include Navbar + Footer -->
+    <script src="common/include.js"></script>
+    <script>
+        loadHTML("navbar", "common/navbar.html").then(() => {
+
+            const navToggle = document.getElementById('navToggle');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const backdrop = document.getElementById('backdrop');
+
+            function openMenu() {
+                mobileMenu.classList.remove('scale-y-0', 'opacity-0');
+                mobileMenu.classList.add('scale-y-100', 'opacity-100');
+                backdrop.classList.remove('opacity-0', 'pointer-events-none');
+            }
+
+            function closeMenu() {
+                mobileMenu.classList.add('scale-y-0', 'opacity-0');
+                mobileMenu.classList.remove('scale-y-100', 'opacity-100');
+                backdrop.classList.add('opacity-0', 'pointer-events-none');
+            }
+
+            navToggle?.addEventListener('click', () => {
+                const isOpen = mobileMenu.classList.contains('scale-y-100');
+                isOpen ? closeMenu() : openMenu();
+            });
+
+            backdrop?.addEventListener('click', closeMenu);
+        });
+    </script>
     <!-- MAIN CONTENT -->
     <main class="pt-28 pb-20 px-6">
         <div class="max-w-5xl mx-auto text-center">
@@ -68,36 +97,7 @@
     <!-- FOOTER -->
     <div id="footer"></div>
 
-    <!-- Include Navbar + Footer -->
-    <script src="common/include.js"></script>
-
     <script>
-        loadHTML("navbar", "common/navbar.html").then(() => {
-
-            const navToggle = document.getElementById('navToggle');
-            const mobileMenu = document.getElementById('mobileMenu');
-            const backdrop = document.getElementById('backdrop');
-
-            function openMenu() {
-                mobileMenu.classList.remove('scale-y-0', 'opacity-0');
-                mobileMenu.classList.add('scale-y-100', 'opacity-100');
-                backdrop.classList.remove('opacity-0', 'pointer-events-none');
-            }
-
-            function closeMenu() {
-                mobileMenu.classList.add('scale-y-0', 'opacity-0');
-                mobileMenu.classList.remove('scale-y-100', 'opacity-100');
-                backdrop.classList.add('opacity-0', 'pointer-events-none');
-            }
-
-            navToggle?.addEventListener('click', () => {
-                const isOpen = mobileMenu.classList.contains('scale-y-100');
-                isOpen ? closeMenu() : openMenu();
-            });
-
-            backdrop?.addEventListener('click', closeMenu);
-        });
-
         loadHTML("footer", "common/footer.html");
     </script>
 

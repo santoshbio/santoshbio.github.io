@@ -22,6 +22,41 @@
   <!-- ================= NAVBAR (INCLUDED) ================= -->
   <div id="navbar"></div>
 
+  <!-- ================= SHARED INCLUDE SCRIPT ================= -->
+  <script src="common/include.js"></script>
+
+  <script>
+    // Load NAVBAR then attach menu logic safely
+    loadHTML("navbar", "common/navbar.html").then(() => {
+
+      const navToggle = document.getElementById('navToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const backdrop = document.getElementById('backdrop');
+
+      function openMenu() {
+        mobileMenu.classList.remove('scale-y-0', 'opacity-0');
+        mobileMenu.classList.add('scale-y-100', 'opacity-100');
+
+        backdrop.classList.remove('opacity-0', 'pointer-events-none');
+        backdrop.classList.add('opacity-100');
+      }
+
+      function closeMenu() {
+        mobileMenu.classList.add('scale-y-0', 'opacity-0');
+        mobileMenu.classList.remove('scale-y-100', 'opacity-100');
+
+        backdrop.classList.add('opacity-0', 'pointer-events-none');
+        backdrop.classList.remove('opacity-100');
+      }
+
+      navToggle?.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.contains('scale-y-100');
+        isOpen ? closeMenu() : openMenu();
+      });
+
+      backdrop?.addEventListener('click', closeMenu);
+    });
+  </script>
   <div id="smooth-wrapper">
     <div id="smooth-content">
 
@@ -84,42 +119,7 @@
     </div>
   </div>
 
-
-  <!-- ================= SHARED INCLUDE SCRIPT ================= -->
-  <script src="common/include.js"></script>
-
   <script>
-    // Load NAVBAR then attach menu logic safely
-    loadHTML("navbar", "common/navbar.html").then(() => {
-
-      const navToggle = document.getElementById('navToggle');
-      const mobileMenu = document.getElementById('mobileMenu');
-      const backdrop = document.getElementById('backdrop');
-
-      function openMenu() {
-        mobileMenu.classList.remove('scale-y-0', 'opacity-0');
-        mobileMenu.classList.add('scale-y-100', 'opacity-100');
-
-        backdrop.classList.remove('opacity-0', 'pointer-events-none');
-        backdrop.classList.add('opacity-100');
-      }
-
-      function closeMenu() {
-        mobileMenu.classList.add('scale-y-0', 'opacity-0');
-        mobileMenu.classList.remove('scale-y-100', 'opacity-100');
-
-        backdrop.classList.add('opacity-0', 'pointer-events-none');
-        backdrop.classList.remove('opacity-100');
-      }
-
-      navToggle?.addEventListener('click', () => {
-        const isOpen = mobileMenu.classList.contains('scale-y-100');
-        isOpen ? closeMenu() : openMenu();
-      });
-
-      backdrop?.addEventListener('click', closeMenu);
-    });
-
     // Load FOOTER
     loadHTML("footer", "common/footer.html");
   </script>
