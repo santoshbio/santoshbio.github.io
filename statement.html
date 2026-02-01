@@ -49,30 +49,34 @@
             backdrop?.addEventListener('click', closeMenu);
         });
     </script>
-
     <!-- MAIN CONTENT -->
-    <main class="pt-28 pb-16 px-6">
+    <main class="pt-24 sm:pt-28 pb-14 sm:pb-16 px-4 sm:px-6">
 
         <div class="max-w-5xl mx-auto">
 
             <!-- Page Title -->
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-5 sm:mb-6">
                 Research Statement: Personalized Cancer Chemotherapy
             </h1>
 
             <!-- Hero Image -->
-            <div class="rounded-3xl overflow-hidden shadow mb-10">
+            <div class="rounded-3xl overflow-hidden shadow mb-8 sm:mb-10">
                 <img src="images/statement/statement.png" class="w-full object-cover"
                     alt="Research statement illustration">
             </div>
 
             <!-- ================= CONTENT CARD ================= -->
-            <div class="bg-[#EDEEE7] rounded-3xl p-8 md:p-12 shadow leading-relaxed text-gray-900">
+            <div class="bg-[#EDEEE7] rounded-3xl p-6 sm:p-8 md:p-12 shadow text-gray-900">
 
                 <!-- Lead Paragraph -->
-                <p class="mb-8 text-lg md:text-xl
-        first-letter:text-5xl first-letter:font-bold
-        first-letter:pr-1 first-letter:float-left">
+                <p class="mb-7 sm:mb-8
+        text-base sm:text-lg md:text-xl
+        leading-relaxed sm:leading-loose
+        first-letter:text-4xl sm:first-letter:text-5xl
+        first-letter:font-bold
+        first-letter:pr-1
+        first-letter:float-left">
+
                     Effective cancer treatment depends on the chemotherapeutic responses in each patient.
                     Genetic alterations within tumor cells are not always common across individuals,
                     therefore responses to chemotherapies can vary widely.
@@ -84,10 +88,10 @@
                 </p>
 
                 <!-- Divider -->
-                <div class="border-t border-gray-300 my-8"></div>
+                <div class="border-t border-gray-300 my-7 sm:my-8"></div>
 
                 <!-- Section 2 -->
-                <p class="mb-6">
+                <p class="mb-5 sm:mb-6 text-sm sm:text-base md:text-lg leading-relaxed">
                     Several loss-of-function and gain-of-function mutations actively drive chemoresistance.
                     Notably, <strong>TP53 gain-of-function mutations</strong> promote genomic instability,
                     suppress apoptosis, alter chromatin regulation, and activate oncogenic transcriptional
@@ -97,7 +101,7 @@
                     altering DNA repair pathway choice, or sustaining proliferative signaling.
                 </p>
 
-                <p class="mb-6">
+                <p class="mb-5 sm:mb-6 text-sm sm:text-base md:text-lg leading-relaxed">
                     Even in BRCA1/2-mutant tumors initially sensitive to PARP inhibitors,
                     secondary mutations can restore homologous recombination,
                     leading to acquired resistance and relapse.
@@ -105,13 +109,16 @@
 
                 <!-- Pull Quote -->
                 <blockquote class="bg-white rounded-2xl border-l-4 border-gray-600
-        p-6 my-10 italic text-lg text-gray-700 shadow-sm">
+        p-5 sm:p-6 my-8 sm:my-10
+        italic text-base sm:text-lg md:text-xl
+        text-gray-700 shadow-sm">
+
                     “Personalized chemotherapy begins with decoding mutation-driven vulnerabilities
                     within each tumor.”
                 </blockquote>
 
                 <!-- Section 3 -->
-                <p class="mb-6">
+                <p class="mb-5 sm:mb-6 text-sm sm:text-base md:text-lg leading-relaxed">
                     In general chemotherapeutic practice, tumor-specific mutations are often not
                     characterized prior to the first treatment. This can activate compensatory
                     survival mechanisms through DNA repair pathways such as
@@ -121,8 +128,8 @@
                     immune signaling reprogramming, and oncogene hyperactivation.
                 </p>
 
-                <!-- Diagram Hyperlink Placeholder -->
-                <p class="mb-6">
+                <!-- Diagram Hyperlink -->
+                <p class="mb-5 sm:mb-6 text-sm sm:text-base md:text-lg leading-relaxed">
                     These resistance-associated adaptations can facilitate secondary tumor evolution
                     and promote treatment failure.
                     (<a href="#diagram"
@@ -132,7 +139,7 @@
                 </p>
 
                 <!-- Closing -->
-                <p class="mt-8">
+                <p class="mt-7 sm:mt-8 text-sm sm:text-base md:text-lg leading-relaxed">
                     My long-term goal is to develop integrative systems that classify tumor-specific
                     mutations in cancer patients and predict optimal therapeutic strategies prior
                     to treatment initiation. By systematically integrating genomic analyses with
