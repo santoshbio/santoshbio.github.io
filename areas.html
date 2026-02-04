@@ -62,94 +62,543 @@
 
             <div id="accordion" class="space-y-6">
 
+
+
                 <!-- ===================================================== -->
                 <!-- PROJECT 1 -->
                 <!-- ===================================================== -->
-                <section class="bg-[#EDEEE7] rounded-3xl shadow">
+                <section class="bg-[#EDEEE7] rounded-3xl shadow overflow-hidden">
 
-                    <button class="accordion-btn w-full flex justify-between items-center px-6 py-5 text-left">
-                        <span class="font-semibold text-lg">
-                            1. Tumor suppression during Germinal center reaction and elimination of B-lymphomas
+                    <!-- Accordion Header -->
+                    <button class="accordion-btn w-full flex justify-between items-center px-6 py-5 text-left
+           hover:bg-black/5 transition">
+                        <span class="font-semibold text-lg leading-snug">
+                            1. Genetic trasmission into offsprings and suppresion of the genetic syndroms and cancer
+                            predisposition
                         </span>
-                        <span class="text-2xl transition-transform">+</span>
+                        <span class="text-2xl transition-transform accordion-icon">+</span>
                     </button>
 
-                    <div class="accordion-panel hidden px-6 pb-6 space-y-6">
+                    <!-- Accordion Content -->
+                    <div class="accordion-panel hidden px-6 pb-8 space-y-8">
 
-                        <p>
-                            In my independent research at Kyoto University Hospital, I uncovered a novel tumor
-                            suppressive mechanism in B-lymphomas: internal CXCL13 expression leads to CXCR5 receptor
-                            internalization, disrupting essential germinal center migration and triggering lymphoma
-                            apoptosis. This intrinsic pathway, driven by a distal super-enhancer on the CCNG2 locus,
-                            reveals a previously unknown mechanism of natural B-lymphoma suppression.
-                            Further, I demonstrated that aberrant CXCL13-CXCR5 signaling in solid tumors (e.g., HCT116,
-                            HepG2) enhances expression of cell cycle regulators (PTP4A1), metastatic receptors (CCR7),
-                            and ubiquitin ligases involved in the p53 degradation, contributing to drug resistance via
-                            p53 dysregulation.
-                            This approach led to the identification of CCR7, PTP4A1, and p53-specific ubiquitin ligases
-                            as novel therapeutic targets, particularly in the context of CXCL13 and co-expressed CXCR5
-                            signaling.
+
+                        <!-- PROJECT 1 MAIN TEXT (paper style like screenshot) -->
+                        <p class="text-sm sm:text-base leading-relaxed text-gray-900">
+
+                            Meiosis is a specialized germ cell division essential for generating haploid gametes,
+                            such as sperm and eggs in humans. Defects in meiosis can result in infertility,
+                            genetic syndromes and increased cancer risk in offspring (Tables 1–3). During my doctoral
+                            studies at Osaka University, Japan, I investigated Spo11-dependent DNA double-strand break
+                            (DSB) formation along the meiotic chromosomes using budding yeast as a model.
+                            Spo11-mediated DSBs initiate meiotic recombination, enabling chiasma formation and genetic
+                            diversity in gametes. Defects in any of these steps can lead defective gamete formation
+                            causing trisomy’s, monosomies and nullisomic (Table 1-3-hyperlink).
+
                         </p>
 
-                        <p>
-                            [Gothwal et al., 2024, Preprint – DOI: 10.1101/2024.08.31.609994]
-                        </p>
+                        <!-- HIGHLIGHT STATEMENT BOX (blue callout like screenshot) -->
+                        <div id="figure_pro1"
+                            class="mt-6 bg-[#0F5E7A] border-2 border-[#083E52] rounded-2xl px-5 py-4 shadow-md">
 
+                            <p class="text-white text-sm sm:text-base font-semibold leading-relaxed">
 
-                        <div class="w-full flex justify-center">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl w-full">
+                                My work identified Paf1C as a genome-wide gatekeeper that directs meiotic DNA breaks
+                                to safe recombination hotspots while preventing chromosomal instability.
+
+                            </p>
+
+                        </div>
+                        <!-- =============================== -->
+                        <!-- PROJECT 1 — TWO FIGURES (NO TEXT) -->
+                        <!-- =============================== -->
+                        <div class="mt-8 flex justify-center w-full">
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl w-full">
 
                                 <!-- FIGURE A -->
                                 <div class="relative aspect-[4/3]">
-                                    <span class="absolute top-3 left-3 bg-white/90 text-gray-900 border border-gray-300
-               text-sm font-semibold px-3 py-1 rounded-md shadow-sm">
-                                        A
-                                    </span>
                                     <img src="images/projects/project1_1.png"
-                                        class="w-full h-full object-contain rounded-2xl shadow"
-                                        alt="Project 1 – Figure A" />
+                                        class="w-full h-full object-contain rounded-2xl shadow-md hover:shadow-lg transition cursor-zoom-in"
+                                        alt="Project 1 Figure A" onclick="openZoom(this.src)" />
                                 </div>
 
                                 <!-- FIGURE B -->
                                 <div class="relative aspect-[4/3]">
-                                    <span class="absolute top-3 left-3 bg-white/90 text-gray-900 border border-gray-300
-               text-sm font-semibold px-3 py-1 rounded-md shadow-sm">
-                                        B
-                                    </span>
                                     <img src="images/projects/project1_2.png"
-                                        class="w-full h-full object-contain rounded-2xl shadow"
-                                        alt="Project 1 – Figure B" />
+                                        class="w-full h-full object-contain rounded-2xl shadow-md hover:shadow-lg transition cursor-zoom-in"
+                                        alt="Project 1 Figure B" onclick="openZoom(this.src)" />
                                 </div>
 
                             </div>
+
+                        </div>
+                        <!-- =============================== -->
+                        <!-- PROJECT 1 MAIN PARAGRAPH -->
+                        <!-- =============================== -->
+                        <p class="mt-8 text-sm sm:text-base leading-relaxed text-gray-900">
+
+                            I demonstrated that RNA polymerase II elongation complex (Paf1C) promotes Spo11-dependent
+                            DSB formation at meiotic recombination hotspots while Paf1C suppresses meiotic DSBs
+                            at cold spots
+                            (<a href="#table_pro1" class="text-blue-700 underline hover:text-blue-900 transition">
+                                Gothwal et al., <em>Genetics</em>, 2016; Tables 1–3
+                            </a>).
+                            Paf1C loss reduced Mre11 and Rad51/Dmc1 assembly on the meiotic chromosomes.
+                            Loss of Paf1C resulted in the emergence of ~180 de novo meiotic hotspots
+                            (<a href="#figure_pro1" class="text-blue-700 underline hover:text-blue-900 transition">
+                                Figure
+                            </a>),
+                            including repetitive DNA regions residing near telomeric and centromeric regions.
+                            Recombination of repetitive DNA sequences is a major cause of non-allelic homologous
+                            recombination (NAHR) and chromosomal rearrangements
+                            (<a href="#table_pro1" class="text-blue-700 underline hover:text-blue-900 transition">
+                                Tables 1-3
+                            </a>),
+                            therefore Paf1C can suppress NAHR during meiosis.
+
+                        </p>
+                        <!-- =============================== -->
+                        <!-- PROJECT 1 — FINAL PARAGRAPH -->
+                        <!-- =============================== -->
+                        <p id="table_pro1" class="text-sm sm:text-base leading-relaxed text-gray-900 mt-6">
+
+                            In cancer biology context, mammalian homologues of Paf1C, SET1/COMPASS complexes such as
+                            <strong>MLL1/3</strong> are frequently overexpressed in tumors such as in childhood
+                            leukemia.
+                            Building on this conserved biology, I am currently investigating <strong>WDR5</strong>, a
+                            core
+                            MLL1 complex member in humans, which is highly expressed in several solid cancers.
+                            My future studies aim to understand the dysregulated function of histone
+                            methyltransferases in cancers.
+
+                        </p>
+
+                        <!-- =============================== -->
+                        <!-- TABLE 1 TITLE -->
+                        <!-- =============================== -->
+                        <h3 class="text-sm sm:text-base font-semibold text-orange-700 mt-6 mb-3">
+                            Table 1: Genetic Syndromes Caused by Meiotic Recombination Defects and NAHR
+                        </h3>
+
+                        <!-- =============================== -->
+                        <!-- TABLE 1 (Responsive + Connected) -->
+                        <!-- =============================== -->
+                        <div class="overflow-x-auto rounded-xl border border-gray-400 bg-white shadow-sm">
+
+                            <table class="w-full text-sm text-left border-collapse">
+
+                                <!-- Header -->
+                                <thead class="bg-gray-100">
+                                    <tr>
+                                        <th class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Gene(s)
+                                        </th>
+                                        <th class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Recombination Mechanism Defect
+                                        </th>
+                                        <th class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Syndrome / Phenotype
+                                        </th>
+                                    </tr>
+                                </thead>
+
+                                <!-- Body -->
+                                <tbody>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            ATM
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Defective DSB signaling & meiotic crossover control
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Ataxia-telangiectasia
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            ATR
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Impaired DSB repair & replication stress response
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Seckel syndrome
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            NBN (NBS1)
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Defective homologous recombination & DSB repair
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Nijmegen breakage syndrome
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            BLM
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Excess sister chromatid exchange, faulty crossover resolution
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Bloom syndrome
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            WRN
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Defective recombination & telomere maintenance
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Werner syndrome
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            FANCA–FANCN
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Interstrand crosslink repair failure during meiosis
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Fanconi anemia
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            DMC1
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Failed strand invasion during meiotic recombination
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Ovarian failure, azoospermia
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            MSH4 / MSH5
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Defective crossover stabilization
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Primary ovarian insufficiency
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            SYCP2 / SYCP3
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Defective synaptonemal complex formation
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Infertility, aneuploidy
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            TEX11
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Abnormal meiotic recombination & synapsis
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Non-obstructive azoospermia
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <!-- =============================== -->
+                        <!-- TABLE 2 TITLE -->
+                        <!-- =============================== -->
+                        <h3 class="text-sm sm:text-base font-semibold text-orange-700 mt-8 mb-3">
+                            Table 2: Mediated Microdeletion / Microduplication Syndromes
+                        </h3>
+
+                        <!-- =============================== -->
+                        <!-- TABLE 2 (Responsive) -->
+                        <!-- =============================== -->
+                        <div class="overflow-x-auto rounded-xl border border-gray-400 bg-white shadow-sm mb-10">
+
+                            <table class="w-full text-sm text-left border-collapse">
+
+                                <!-- Header -->
+                                <thead class="bg-gray-100">
+                                    <tr>
+                                        <th class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Gene / Region
+                                        </th>
+                                        <th class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Mechanism
+                                        </th>
+                                        <th class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Syndrome
+                                        </th>
+                                    </tr>
+                                </thead>
+
+                                <!-- Body -->
+                                <tbody>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            22q11.2
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            NAHR between LCRs
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            DiGeorge / Velocardiofacial
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            7q11.23 (ELN)
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            NAHR-mediated deletion
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Williams–Beuren syndrome
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            15q11–q13
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            NAHR + imprinting
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Prader–Willi syndrome
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            15q11–q13
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            NAHR + imprinting
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Angelman syndrome
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            17p11.2
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            NAHR deletion
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Smith–Magenis syndrome
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            17p11.2
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            NAHR duplication
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Potocki–Lupski syndrome
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            PMP22
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            NAHR duplication
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Charcot–Marie–Tooth 1A
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            PMP22
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            NAHR deletion
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            HNPP
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            11p13
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            NAHR deletion
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            WAGR syndrome
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            17p13.3
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            NAHR deletion
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Miller–Dieker syndrome
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
                         </div>
 
 
-                        <div class="bg-white rounded-2xl p-5 text-sm space-y-3">
+                        <!-- =============================== -->
+                        <!-- TABLE 3 TITLE -->
+                        <!-- =============================== -->
+                        <h3 class="text-sm sm:text-base font-semibold text-orange-700 mt-8 mb-3">
+                            Table 3: Short-Homology NAHR / Microhomology-Mediated Rearrangement
+                        </h3>
 
-                            <p>
-                                <strong>(A)</strong> The mechanims of CXCL13 expresion in the B-lymphomas is driven by
-                                the Distal enhancer
-                                located nearly 400 kb upstream of CXCL13 promoter. This expresion of CCL13 is suppressed
-                                by the DNA methylation and DNA-mehtylation binding protein MBD1. In the B-lymphomas, the
-                                internal CXCL13 leads to CXCR5-receptor internalization, elading to the reduction of the
-                            </p>
+                        <!-- =============================== -->
+                        <!-- TABLE 3 (Responsive) -->
+                        <!-- =============================== -->
+                        <div class="overflow-x-auto rounded-xl border border-gray-400 bg-white shadow-sm">
 
-                            <p>
-                                <strong>(B)</strong> Model of GC dervied B-lymphoma elimination in the GC reaction. The
-                                schematic of
-                                germinal cetner reaction. B cells undergo Class switch recombination and Somatic
-                                hypermutation, Antibody isotypes are generated. However, AID induced DBS can often
-                                undergo non-Ig locus, leading to chromosomal translocations, such as IgH-Myc, IgH-Bcl6,
-                                making B-lymphoma precursors. These precursors start making the internal CXCL13, leading
-                                to the B-lymphoma confinement in the DZ, thus, elimination of B-lymphomagenesis is
-                                regulatedduring the GC reaction. (B). Molecular mechanims of B-lymphomas, driving the
-                            </p>
+                            <table class="w-full text-sm text-left border-collapse">
 
+                                <!-- Header -->
+                                <thead class="bg-gray-100">
+                                    <tr>
+                                        <th class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Gene
+                                        </th>
+                                        <th class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Mechanism
+                                        </th>
+                                        <th class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Syndrome
+                                        </th>
+                                    </tr>
+                                </thead>
+
+                                <!-- Body -->
+                                <tbody>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            PLP1
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Microhomology-mediated duplication
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Pelizaeus–Merzbacher disease
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            MECP2
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Complex duplication via short homologies
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            MECP2 duplication syndrome
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            DMD
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Microhomology-mediated deletions
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Duchenne / Becker MD
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            F8
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Intron inversion via recombination
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Hemophilia A
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            HBA1 / HBA2
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Unequal crossover on short homology
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            α-thalassemia
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold italic">
+                                            NSD1
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Non-recurrent microdeletion
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Sotos syndrome
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
                         </div>
 
                     </div>
+
                 </section>
+
 
                 <!-- ===================================================== -->
                 <!-- PROJECT 2 -->
@@ -160,8 +609,7 @@
                     <button class="accordion-btn w-full flex justify-between items-center px-6 py-5 text-left
            hover:bg-black/5 transition">
                         <span class="font-semibold text-lg leading-snug">
-                            2. Mechanisms Ensuring Safe Transmission of Genetic Material While Preventing
-                            Genetic Syndromes and Cancer Predisposition
+                            2. Antibody Class-Switch Recombination and B-lymphomagenesis
                         </span>
                         <span class="text-2xl transition-transform accordion-icon">+</span>
                     </button>
@@ -169,133 +617,184 @@
                     <!-- Accordion Content -->
                     <div class="accordion-panel hidden px-6 pb-8 space-y-8">
 
-                        <!-- Metadata -->
-                        <div class="bg-white rounded-2xl p-5 shadow-sm text-sm text-gray-700">
-                            <p><span class="font-semibold">Project Title:</span>
-                                Epigenetic Regulation and Chromosome Conformation in Meiotic DNA Double-Strand Break
-                                Formation and Repair
-                            </p>
-                            <p class="mt-1">
-                                <span class="font-semibold">Institution:</span> Osaka University, Japan
-                            </p>
-                        </div>
 
-                        <!-- Main Text -->
-                        <div class="space-y-6 leading-relaxed text-gray-900">
+                        <!-- PROJECT 2 MAIN PARAGRAPH (paper-style, mobile-friendly) -->
+                        <p class="text-sm sm:text-base leading-relaxed text-gray-900">
 
-                            <p>
-                                During my doctoral studies at Osaka University, I developed a strong foundation in
-                                chromosome biology,
-                                with a particular focus on the molecular mechanisms governing DNA double-strand break
-                                (DSB) formation
-                                and repair during meiosis. Using budding yeast meiosis as a model system, I investigated
-                                how chromatin
-                                structure and transcriptional activity influence meiotic recombination.
-                            </p>
+                            In my postdoctoral training at Kyoto University under the supervision of Prof. Tasuku Honjo
+                            (Nobel Laureate, 2018), I investigated the role of the histone acetyl-reader protein BRD2 in
+                            antibody class switch recombination (CSR). Activation-Induced Cytidine Deaminase (AID)
+                            induces
+                            DNA breaks at the immunoglobulin (<em>Ig</em>) locus for CSR, which are mainly repaired by
+                            non-homologous end joining (NHEJ). AID off-targeting can lead to several forms of B-cell
+                            lymphomas
+                            (<a href="#table_pro2" class="text-blue-700 underline hover:text-blue-900 transition"> Table
+                            </a>).
 
-                            <p>
-                                My research addressed the interplay between epigenetic regulators, cohesin complexes,
-                                and the
-                                transcriptional machinery that together shape meiotic chromosome architecture into
-                                loop–axis domains.
-                                I identified the RNA polymerase II elongation complex <strong>Paf1C</strong> as a
-                                central regulator of
-                                histone modifications, including H2BK123 ubiquitination and H3K4, H3K36, and H3K79
-                                trimethylation,
-                                which are critical for higher-order chromatin organization.
-                            </p>
+                            I demonstrated that BRD2 promotes NHEJ at the <em>Ig</em> locus by facilitating KU70/80
+                            assembly,
+                            while suppressing RAD51 assembly and, consequently, homologous recombination (HR). BRD2 also
+                            suppresses microhomology-mediated end joining (MMEJ)
+                            (<a href="https://doi.org/10.1093/nar/gkae204"
+                                class="text-blue-700 underline hover:text-blue-900 transition">
+                                Gothwal et al., 2024, Nucleic Acids Research
+                            </a>).
 
-                            <p>
-                                Importantly, I demonstrated that Paf1C regulates the spatial distribution of programmed
-                                DSBs by
-                                promoting Spo11-dependent DSB formation at recombination hotspots while suppressing
-                                breaks at cold
-                                spots (Gothwal <em>et al.</em>, <em>Genetics</em>, 2016). This mechanism safeguards
-                                genome inheritance
-                                by preventing chromosomal mis-segregation, aneuploidy, and genome instability.
-                            </p>
+                            BRD2 coordinates with the cohesin loader NIPBL and CTCF to promote NHEJ during CSR.
+                            Intriguingly,
+                            NIPBL knockdown—mutations of which are associated with
+                            <a href="https://en.wikipedia.org/wiki/Cornelia_de_Lange_syndrome"
+                                class="text-blue-700 underline hover:text-blue-900 transition">
+                                Cornelia de Lange syndrome
+                            </a> — also impairs NHEJ and CSR, suggesting broader links between chromatin structure and
+                            epigenetic regulation in humoral immunity.
 
-                            <p>
-                                These findings have broad relevance to chromosomal disorders such as Down syndrome and
-                                Klinefelter
-                                syndrome, which arise from defective meiotic chromosome segregation. In cancer biology,
-                                mammalian
-                                homologues of Paf1C and SET1 methyltransferases are frequently overexpressed, with MLL1
-                                fusions being
-                                common in childhood leukemia and several solid tumors.
-                            </p>
+                            My work provided new insights into how BRD2, together with chromosome structural proteins
+                            such
+                            as NIPBL, maintains genome integrity during antibody diversification while limiting
+                            oncogenic
+                            translocations.
 
-                            <p>
-                                Building on this foundation, my current research examines the role of
-                                <strong>WDR5</strong>, a core
-                                component of the MLL1 complex, which is highly expressed in glioblastoma and other solid
-                                cancers.
-                                Aberrant transcription driven by these chromatin regulators promotes oncogenic signaling
-                                and alters
-                                proteasomal regulation of high-fidelity DNA repair pathways, particularly homologous
-                                recombination.
-                            </p>
+                        </p>
 
-                            <p>
-                                Collectively, these studies inform the rational design of chemotherapeutic strategies
-                                targeting
-                                histone methyltransferase–overexpressing tumors, offering a promising avenue toward more
-                                sensitive
-                                and precise cancer therapies.
-                            </p>
+                        <!-- FIGURE ROW (matches screenshot positioning) -->
+                        <div class="grid grid-cols-2 gap-6 items-start max-w-4xl mx-auto">
 
-                        </div>
 
-                        <!-- Image Grid -->
-                        <div class="flex justify-center">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl w-full">
+                            <!-- FIGURE A -->
+                            <div class="relative aspect-[4/3]">
+                                <img src="images/projects/project2_1.png"
+                                    class="w-full h-full object-contain rounded-2xl shadow-md hover:shadow-lg transition"
+                                    alt="Project 4 figure A" />
+                            </div>
 
-                                <!-- FIGURE A -->
-                                <div class="relative aspect-[4/3]">
-                                    <span class="absolute top-3 left-3 bg-white/90 text-gray-900 border border-gray-300
-               text-sm font-semibold px-3 py-1 rounded-md shadow-sm">
-                                        A
-                                    </span>
-                                    <img src="images/projects/project2_1.png"
-                                        class="w-full h-full object-contain rounded-2xl shadow-md hover:shadow-lg transition"
-                                        alt="Meiotic loop-axis chromatin organization diagram" />
-                                </div>
-
-                                <!-- FIGURE B -->
-                                <div class="relative aspect-[4/3]">
-                                    <span class="absolute top-3 left-3 bg-white/90 text-gray-900 border border-gray-300
-               text-sm font-semibold px-3 py-1 rounded-md shadow-sm">
-                                        B
-                                    </span>
-                                    <img src="images/projects/project2_2.png"
-                                        class="w-full h-full object-contain rounded-2xl shadow-md hover:shadow-lg transition"
-                                        alt="Altered meiotic DSB distribution in rtf1 mutant" />
-                                </div>
-
+                            <!-- FIGURE B -->
+                            <div class="relative aspect-[4/3]">
+                                <img src="images/projects/project2_2.png"
+                                    class="w-full h-full object-contain rounded-2xl shadow-md hover:shadow-lg transition"
+                                    alt="Project 4 figure B" />
                             </div>
                         </div>
 
+                        <!-- FUTURE DIRECTION PARAGRAPH -->
+                        <p id="table_pro2" class="text-sm sm:text-base leading-relaxed text-gray-900 mb-6">
+                            In the future research, I will continue exploring the epigenetic regulators in the antibody
+                            class
+                            switch recombination. The novel regulators of NHEJ and MMEJ and help understand the
+                            mechanism of
+                            genome-translocations arising during the antibody diversification in humans.
+                        </p>
 
+                        <!-- TABLE TITLE -->
+                        <h3 class="text-sm sm:text-base font-semibold text-blue-800 mb-3">
+                            Table 1 (List of B-lymphoma arising during the AID activation)
+                        </h3>
 
-                        <!-- Figure Caption -->
-                        <div class="bg-white rounded-2xl p-5 text-sm text-gray-700 shadow-sm">
-                            <p>
-                                <strong>(A)</strong> Schematic representation of meiotic loop–axis chromosomal
-                                organization and
-                                localization of the histone H3K4me3 mark on chromatin loops. H3K4me3 deposition is
-                                promoted by the
-                                RNA polymerase II transcription elongation complex Paf1C and the SET1 histone
-                                methyltransferase.
-                                <br><br>
-                                <strong>(B)</strong> Redistribution of meiotic DNA double-strand breaks in the
-                                <em>rtf1</em> mutant background, demonstrating altered hotspot activity
-                                (Gothwal <em>et al.</em>, <em>Genetics</em>, 2015).
-                            </p>
+                        <!-- TABLE (Mobile Responsive Scroll) -->
+                        <div class="overflow-x-auto rounded-xl border border-gray-400 bg-white shadow-sm">
+                            <table class="w-full text-sm text-left border-collapse">
+
+                                <!-- Header -->
+                                <thead class="bg-gray-100">
+                                    <tr>
+                                        <th class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Lymphoma Type
+                                        </th>
+                                        <th class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Primary Translocation
+                                        </th>
+                                        <th class="border border-gray-400 px-3 py-2 font-semibold">
+                                            <em>Ig</em> Partner
+                                        </th>
+                                        <th class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Oncogene Partner
+                                        </th>
+                                    </tr>
+                                </thead>
+
+                                <!-- Body -->
+                                <tbody>
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Burkitt Lymphoma
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            t(8;14), t(2;8), t(8;22)
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2 italic">
+                                            IGH, IGK, IGL
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2 italic">
+                                            MYC
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Follicular Lymphoma
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            t(14;18)
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2 italic">
+                                            IGH
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2 italic">
+                                            BCL2
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            DLBCL (GCB subtype)
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2 italic">
+                                            IgH/IgL–BCL6
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2 italic">
+                                            IGH/IGL
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2 italic">
+                                            BCL6
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 italic">
+                                            DLBCL with MYC rearrangement
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2 italic">
+                                            IgH/IgL–MYC
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2 italic">
+                                            IGH/IGL
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2 italic">
+                                            MYC
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            High-grade B-cell lymphoma (DH/TH)
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2 italic">
+                                            Ig translocations involving MYC, BCL2, BCL6
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2 italic">
+                                            IGH/IGL/IGK
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Multiple
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
+
 
                     </div>
                 </section>
-
 
                 <!-- ===================================================== -->
                 <!-- PROJECT 3 -->
@@ -303,101 +802,139 @@
                 <section class="bg-[#EDEEE7] rounded-3xl shadow overflow-hidden">
 
                     <!-- Accordion Header -->
-                    <button class="accordion-btn w-full flex justify-between items-center px-6 py-5 text-left
-           hover:bg-black/5 transition">
-                        <span class="font-semibold text-lg leading-snug">
-                            3. Molecular Mechanisms of Antibody Class-Switch Recombination
+                    <button
+                        class="accordion-btn w-full flex justify-between items-center px-6 py-5 text-left hover:bg-black/5 transition">
+
+                        <span class="font-semibold text-base sm:text-lg leading-snug">
+                            3. Regulation of G-protein coupled receptors in the tumor suppresion and germinal center
+                            reactions
                         </span>
+
                         <span class="text-2xl transition-transform accordion-icon">+</span>
                     </button>
 
                     <!-- Accordion Content -->
                     <div class="accordion-panel hidden px-6 pb-8 space-y-8">
 
-                        <!-- Metadata Card -->
-                        <div class="bg-white rounded-2xl p-5 shadow-sm text-sm text-gray-700">
-                            <p><span class="font-semibold">Postdoctoral Training:</span>
-                                Chromosome Translocations and B-Lymphomagenesis
-                            </p>
-                            <p class="mt-1">
-                                <span class="font-semibold">Mentor:</span>
-                                Prof. Tasuku Honjo (Nobel Laureate in Physiology or Medicine, 2018)
-                            </p>
-                            <p class="mt-1">
-                                <span class="font-semibold">Institution:</span>
-                                Kyoto University, Japan
-                            </p>
-                        </div>
+                        <!-- MAIN PARAGRAPH (paper-style with DOI hyperlink) -->
+                        <p class="text-sm sm:text-base leading-relaxed text-gray-900">
 
-                        <!-- Main Narrative -->
-                        <div class="space-y-6 leading-relaxed text-gray-900">
+                            In my independent research at Kyoto University Hospital, and as an assistant
+                            professor at Cancer Research Institute, Kanazawa University, Japan, I investigated the
+                            mechanisms suppressing the B-lymphomagenesis. I found that B-lymphoma cells specifically
+                            start express the CXCL13 ligand while normal B cells do not express the CXCL13 ligand
+                            (<a href="https://doi.org/10.1101/2024.08.31.609994" target="_blank"
+                                class="text-blue-700 underline hover:text-blue-900 transition">Gothwal et al., 2024
+                            </a>).
 
-                            <p>
-                                During my postdoctoral training under Prof. Tasuku Honjo, I expanded my research into
-                                site-specific recombination in B cells, focusing on the molecular mechanisms by which
-                                Activation-Induced Cytidine Deaminase (AID) induces DNA double-strand breaks (DSBs) at
-                                immunoglobulin (Ig) loci during antibody class-switch recombination (CSR). While CSR is
-                                essential for antibody diversification, it also poses inherent risks of chromosomal
-                                translocations and genome instability.
-                            </p>
+                        </p>
 
-                            <p>
-                                My work centered on elucidating how the histone acetyl-reader protein
-                                <strong>BRD2</strong> regulates the repair of AID-induced DSBs. I demonstrated that BRD2
-                                promotes non-homologous end joining (NHEJ) while suppressing homologous recombination
-                                (HR)
-                                and microhomology-mediated end joining (MMEJ), thereby biasing repair toward the
-                                canonical
-                                pathway used during CSR (Gothwal <em>et al.</em>, <em>Nucleic Acids Research</em>,
-                                2024).
-                            </p>
+                        <p class="text-sm sm:text-base leading-relaxed text-gray-900 mt-4">
 
-                            <p>
-                                Mechanistically, BRD2 coordinates DSB repair by recruiting cohesin loaders such as
-                                <strong>NIPBL</strong>, the architectural protein <strong>CTCF</strong>, and other
-                                chromatin
-                                regulators to the Ig locus, ensuring efficient and spatially constrained NHEJ. However,
-                                this same architectural framework also facilitates pathogenic IgH–MYC chromosomal
-                                translocations, thereby contributing to B-lymphomagenesis.
-                            </p>
+                            I hypothesized that intracellular CXCL13 ligand expression in B-cell lymphomas can impair
+                            their migration toward the light zone by promoting internalization of the CXCR5 receptor,
+                            a G-protein–coupled receptor for CXCL13. This impaired migration to the light zone can
+                            prevent affinity maturation due to restricted entry into the light zone, as follicular
+                            dendritic cells provide essential survival signals required for B-cell affinity maturation
+                            in this compartment. This selective adaptation of CXCL13 expression in germinal
+                            center–derived B-cell lymphomas may serve as a key tumor-suppressive mechanism.
 
-                            <p>
-                                These findings revealed a dual role for BRD2: safeguarding genome integrity during
-                                physiological antibody diversification while simultaneously enabling oncogenic
-                                rearrangements under dysregulated conditions. Notably, mutations in NIPBL—classically
-                                associated with Cornelia de Lange Syndrome (CdLS)—may also impair humoral immune
-                                responses,
-                                highlighting broader links between chromatin architecture, immunity, and disease.
-                            </p>
+                        </p>
 
-                            <p>
-                                Beyond its role in CSR, BRD2 emerged as a potential oncogenic driver in B cells.
-                                Nevertheless, germinal center (GC) reactions deploy intrinsic tumor-suppressive
-                                checkpoints
-                                that eliminate B cells bearing non-functional or oncogenic receptors. Building on this
-                                observation, subsequent projects explored how these checkpoints restrict affinity
-                                maturation and prevent GC exit of potentially malignant clones.
-                            </p>
-
-                            <p>
-                                Importantly, bromodomain proteins such as BRD2 are also actionable therapeutic targets.
-                                Small-molecule inhibitors, including <strong>JQ1</strong>, have demonstrated efficacy in
-                                suppressing BRD-dependent oncogene expression. Collectively, this body of work
-                                establishes
-                                BRD2 as a critical regulator of genome stability and a promising target in B-cell
-                                malignancies.
-                            </p>
-
-                        </div>
-
+                        <!-- Image Grid -->
                         <div class="flex justify-center">
-                            <div class="max-w-2xl w-full">
-                                <img src="images/projects/project3.png"
-                                    class="w-full object-contain rounded-xl shadow-sm"
-                                    alt="Model of BRD2-regulated DNA repair during antibody class-switch recombination" />
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl w-full">
+
+                                <!-- Figure A -->
+                                <div class="relative aspect-[4/3]">
+                                    <span class="absolute top-3 left-3 bg-white/90 text-gray-900 border border-gray-300
+                   text-xs font-semibold px-3 py-1 rounded-md shadow-sm">
+                                        A
+                                    </span>
+
+                                    <img src="images/projects/project3_1.png"
+                                        class="w-full h-full object-contain rounded-2xl shadow-md hover:shadow-lg transition"
+                                        alt="Spo11-dependent meiotic recombination hotspots regulated by Paf1C" />
+                                </div>
+
+                                <!-- Figure B -->
+                                <div class="relative aspect-[4/3]">
+                                    <span class="absolute top-3 left-3 bg-white/90 text-gray-900 border border-gray-300
+                   text-xs font-semibold px-3 py-1 rounded-md shadow-sm">
+                                        B
+                                    </span>
+
+                                    <img src="images/projects/project3_2.png"
+                                        class="w-full h-full object-contain rounded-2xl shadow-md hover:shadow-lg transition"
+                                        alt="Altered chromosome axis markers Rec8 and Hop1 in paf1 mutant" />
+                                </div>
+
                             </div>
                         </div>
 
+                        <!-- FIGURE CAPTION CARD (paper-style, mobile optimized) -->
+                        <div class="bg-white rounded-2xl
+         p-4 sm:p-5
+         text-[11px] sm:text-sm
+         leading-snug sm:leading-relaxed
+         text-gray-700
+         shadow-sm space-y-3">
+
+                            <p>
+                                <strong>(A)</strong>
+                                The mechanims of CXCL13 expresion in the B-lymphomas is driven by the Distal enhancer
+                                located nearly 400 kb upstream of CXCL13 promoter. This expresion of CXCL13 is
+                                suppressed
+                                by the DNA methylation and DNA-methylation binding protein MBD1. In the B-lymphomas, the
+                                internal CXCL13 leads to CXCR5-receptor internalization, leading to the reduction of the
+                                GC exit.
+                            </p>
+
+                            <p>
+                                <strong>(B)</strong>
+                                Model of GC derived B-lymphoma elimination in the GC reaction. The schematic of germinal
+                                center reaction. B cells undergo Class switch recombination and Somatic hypermutation,
+                                Antibody isotypes are generated. However, AID induced DSBs can often undergo non-Ig
+                                locus,
+                                leading to chromosomal translocations, such as IgH-Myc, IgH-Bcl6, making B-lymphoma
+                                precursors. These precursors start making the internal CXCL13, leading to the B-lymphoma
+                                confinement in the DZ, thus elimination of B-lymphomagenesis is regulated during the GC
+                                reaction.
+                            </p>
+
+                        </div>
+                        <!-- MAIN PARAGRAPH (paper-style, mobile small) -->
+                        <p class="text-sm sm:text-base leading-relaxed text-gray-900">
+
+                            Mechanistically I demonstrated that intrinsic <em>CXCL13</em> expression in B-lymphomas is
+                            driven by a
+                            distal super-enhancer located on the <em>CCNG2</em> locus, revealing a previously unknown
+                            mechanism
+                            of <em>CXCL13</em> expression in B-lymphomas
+                            (<a href="https://doi.org/10.1101/2024.08.31.609994" target="_blank"
+                                class="text-blue-700 underline hover:text-blue-900 transition">Gothwal et al., 2024
+                            </a>).
+
+                            Further, I demonstrated that aberrant CXCL13–CXCR5 signaling in solid tumors (e.g., HCT116,
+                            HepG2)
+                            enhances expression of cell cycle regulators (<em>PTP4A1</em>), metastatic receptors
+                            (<em>CCR7</em>),
+                            and ubiquitin ligases involved in the p53 degradation, contributing to drug resistance via
+                            p53
+                            dysregulation. This approach led to the identification of CCR7, PTP4A1, and p53-specific
+                            ubiquitin
+                            ligases as novel therapeutic targets, particularly in the cancers exhibiting co-expression
+                            of CXCL13
+                            ligand CXCR5. My future research direction will be exploring the therapeutic efficacy of
+                            inhibiting
+                            the CXCR5–CXCL13 axis targets such as <em>PTP4A1</em>, combination with existing
+                            chemotherapies and
+                            immunotherapies
+                            (<a href="https://doi.org/10.1101/2024.08.31.609994" target="_blank"
+                                class="text-blue-700 underline hover:text-blue-900 transition">Gothwal et al., 2024
+                            </a>).
+
+                        </p>
 
 
                     </div>
@@ -409,11 +946,141 @@
                 <!-- ===================================================== -->
                 <section class="bg-[#EDEEE7] rounded-3xl shadow overflow-hidden">
 
+                    <button class="accordion-btn w-full flex justify-between items-center px-6 py-5 text-left
+         hover:bg-black/5 transition">
+                        <span class="font-semibold text-lg">
+                            4. Epigenetic regulation of BCL6 translocations and implications in cancer target therapies
+                        </span>
+                        <span class="text-2xl transition-transform">+</span>
+                    </button>
+                    <div class="accordion-panel hidden px-6 pb-8 space-y-5">
+
+                        <!-- MAIN TEXT BLOCK (paper-style like screenshot) -->
+                        <p class="text-sm sm:text-base leading-relaxed text-gray-900 text-justify">
+
+                            <em>BCL6</em> is an oncoprotein, that suppresses p53 response, DNA damage signaling,
+                            inflammatory and apoptotic signalling. <em>BCL6</em>-translocations are observed in
+                            31% of diffuse large B-cell lymphoma (DLBCL) and in other solid cancers
+                            (<a href="https://doi.org/10.1101/2025.03.13.643172" target="_blank"
+                                class="text-blue-700 underline hover:text-blue-900 transition">
+                                Gothwal et al., 2025
+                            </a>).
+                            <em>BCL6</em> overexpression is a predominant feature in these tumors causing
+                            therapeutic failure.
+
+                            DNA-CpG methylation-binding protein 1 (<em>MBD1</em>) was one of the factors
+                            identified from my recently developed screening for identification of novel tumor
+                            suppressors using the <em>GC</em> derived B-lymphoma cells
+                            (<a href="https://doi.org/10.1101/2024.12.19.628635" target="_blank"
+                                class="text-blue-700 underline hover:text-blue-900 transition">Gothwal et al., 2024
+                            </a>).
+
+                            <em>BCL6</em> translocation hotspot harbors the conserved CpG methylation sites,
+                            I hypothesized that <em>MBD1</em> might suppress the <em>BCL6</em> translocation
+                            via its CpG methylation binding to <em>BCL6</em> promoter.
+
+                            Functional analysis of <em>MBD1</em> revealed that <em>MBD1</em> suppresses
+                            genomic instabilities at the <em>BCL6</em> locus, possibly suppressing the
+                            <em>BCL6</em> translocation
+                            (<a href="https://doi.org/10.1101/2025.03.13.643172" target="_blank"
+                                class="text-blue-700 underline hover:text-blue-900 transition">Gothwal et al., 2025
+                            </a>).
+
+                            Furthermore, <em>MBD1</em> depletion sensitized Raji cells to HU, gemcitabine,
+                            and etoposide, and <em>MBD1</em>-depeleted cells showed reduced tumorigenicity
+                            in the mouse xenograft model
+                            (<a href="https://doi.org/10.1101/2025.03.13.643172" target="_blank"
+                                class="text-blue-700 underline hover:text-blue-900 transition">Gothwal et al., 2025
+                            </a>).
+
+                            These highlight the potential of <em>MBD1</em> inhibition as a novel target
+                            chemotherapy in cancers exhibiting treatment failure against the chemotherapeutic
+                            drugs targeting the DNA replication.
+
+                        </p>
+
+
+                        <!-- FIGURE ROW (matches screenshot positioning) -->
+                        <div class="grid grid-cols-2 gap-6 items-start max-w-4xl mx-auto">
+
+
+                            <!-- FIGURE A -->
+                            <div class="relative aspect-[4/3]">
+                                <span
+                                    class="absolute top-3 left-3 z-10 bg-black/70 text-white text-sm font-semibold px-3 py-1 rounded-md">
+                                    A
+                                </span>
+                                <img src="images/projects/project4_1.png"
+                                    class="w-full h-full object-contain rounded-2xl shadow-md hover:shadow-lg transition"
+                                    alt="Project 4 figure A" />
+                            </div>
+
+                            <!-- FIGURE B -->
+                            <div class="relative aspect-[4/3]">
+                                <span
+                                    class="absolute top-3 left-3 z-10 bg-black/70 text-white text-sm font-semibold px-3 py-1 rounded-md">
+                                    B
+                                </span>
+                                <img src="images/projects/project4_2.png"
+                                    class="w-full h-full object-contain rounded-2xl shadow-md hover:shadow-lg transition"
+                                    alt="Project 4 figure B" />
+                            </div>
+                        </div>
+
+                        <!-- CAPTION STRIP (journal-style) -->
+                        <div class="border border-gray-400 bg-white px-4 py-2 text-[11px] leading-snug text-gray-900">
+
+                            <p class="font-semibold mb-1">
+                                MBD1 limits B cell lymphoma development and preserves genomic stability.
+                            </p>
+
+                            <p>
+                                <strong>(A)</strong> Human Raji B cell lymphoma xenografts in nude mice exhibit reduced
+                                tumor growth following MBD1 depletion, indicating a tumor-suppressive role for MBD1.
+                            </p>
+
+                            <p class="mt-1">
+                                <strong>(B)</strong> Proposed model illustrating the role of MBD1 in regulating germinal
+                                center (GC)-derived B cell lymphomas and maintaining genomic stability at the BCL6 locus
+                                (adapted from Gothwal et al., 2024). Under genotoxic stress, MBD1 suppresses BCL6
+                                expression
+                                in B cells, potentially limiting BCL6-dependent lymphomagenesis in GCs. In parallel,
+                                MBD1
+                                fine-tunes IRF4 regulation to support proper plasma cell differentiation, ensuring the
+                                fidelity and functional quality of the GC response.
+                            </p>
+
+                        </div>
+                        <p class="text-sm sm:text-base leading-relaxed text-gray-900 text-justify">
+
+                            Moving forward, I will investigate how <strong>MBD1 or other transcriptional
+                                silencers sensitize cancer cells under the DNA replication stress</strong>. This will
+                            focus on
+                            investigating the <strong>transcription–replication conflicts and DNA replication
+                                stress–associated events</strong> that arise in the <strong>absence of MBD1</strong>.
+                            Ultimate goal
+                            of the study will be in elucidating the <strong>mechanisms of synthetic lethality</strong>
+                            induced by <em>MBD1</em> depletion with combination of Poly (ADP-ribose) Polymerase
+                            (PARP) inhibitors in <em>BRCA1/2</em> deficient cancers.
+
+                        </p>
+
+
+                    </div>
+
+                </section>
+
+
+                <!-- ===================================================== -->
+                <!-- PROJECT 5 -->
+                <!-- ===================================================== -->
+                <section class="bg-[#EDEEE7] rounded-3xl shadow overflow-hidden">
+
                     <!-- Accordion Header -->
                     <button class="accordion-btn w-full flex justify-between items-center px-6 py-5 text-left
            hover:bg-black/5 transition">
                         <span class="font-semibold text-lg leading-snug">
-                            4. Germinal Centers as Physiological Sites of Tumor Suppression
+                            5. Chemotherapeutic target development using Germinal center derived B-Cell Lymphoma
                         </span>
                         <span class="text-2xl transition-transform accordion-icon">+</span>
                     </button>
@@ -421,225 +1088,314 @@
                     <!-- Accordion Content -->
                     <div class="accordion-panel hidden px-6 pb-8 space-y-8">
 
-                        <!-- Context -->
-                        <div class="space-y-4 leading-relaxed text-gray-900">
-                            <p>
-                                The germinal center (GC) reaction is a central process in the humoral immune response,
-                                enabling B cells to undergo somatic hypermutation and antibody class-switch
-                                recombination,
-                                ultimately generating high-affinity antibodies. Upon antigenic stimulation, GC B cells
-                                upregulate two key regulators: <strong>BCL6</strong>, which promotes B-cell survival and
-                                proliferation, and <strong>activation-induced cytidine deaminase (AID)</strong>, which
-                                introduces programmed DNA double-strand breaks (DSBs) to drive antibody diversification.
+                        <div class="space-y-6">
+
+                            <!-- Main Paragraph -->
+                            <p class="text-sm sm:text-base leading-relaxed text-gray-900">
+                                My original research hypothesis is influenced by germinal center (GC) biology.
+                                The GC reaction is a central process in the humoral immune response, enabling
+                                B cells to produce high-affinity antibodies in response to antigenic stimulation.
+                                Upon antigenic stimulation, GC B cells upregulate two key regulators: BCL6,
+                                which promotes B-cell survival, and activation-induced cytidine deaminase (AID).
+                                AID activity at the immunoglobulin (<em>Ig</em>) locus is essential for somatic
+                                hypermutation and class-switch recombination; however, if AID is off-targeted
+                                to non-<em>Ig</em> loci such as <em>MYC</em> and <em>BCL6</em>, it can result in
+                                chromosomal translocations, which are hallmarks of Burkitt’s lymphoma and
+                                diffuse large B-cell lymphoma (DLBCL), respectively. In addition, several other
+                                forms of B-cell lymphomas can be generated at various stages of GC B-cell development
+                                (Table 1).
                             </p>
 
-                            <p>
-                                While AID activity is indispensable for immune adaptation, it also poses a substantial
-                                oncogenic risk. Off-target DNA breaks can give rise to chromosomal translocations such
-                                as
-                                <strong>IgH–MYC</strong> and <strong>IgH–BCL6</strong>, which are hallmark lesions of
-                                Burkitt’s lymphoma and diffuse large B-cell lymphoma (DLBCL). In addition, malignancies
-                                such
-                                as B-cell chronic lymphocytic leukemia (B-CLL) and multiple myeloma arise from mutated B
-                                cells that have passed through memory or plasma cell differentiation stages.
+                            <!-- Hypothesis Highlight Line -->
+                            <p
+                                class="text-sm sm:text-base italic text-orange-600 text-center font-semibold leading-relaxed">
+                                My hypothesis “Germinal centers (GCs) B cells possess strong tumor-suppressive
+                                mechanisms that can be reactivated in GC-derived B-lymphomas by GC-like genotoxic
+                                stress.”
                             </p>
 
-                            <p>
-                                Despite lifelong and repeated activation of GC reactions in humans, these lymphomas
-                                remain
-                                relatively infrequent. This paradox strongly suggests that germinal centers harbor
-                                robust
-                                intrinsic quality-control mechanisms capable of identifying and eliminating potentially
-                                malignant B cells before malignant transformation occurs. Consequently, GC-derived
-                                B-lymphomas represent a powerful biological system for uncovering endogenous tumor
-                                suppression mechanisms.
-                            </p>
-                        </div>
+                            <!-- ===================== -->
+                            <!-- TWO FIGURES SIDE BY SIDE -->
+                            <!-- ===================== -->
+                            <div class="flex justify-center w-full">
 
-                        <!-- Hypothesis -->
-                        <div class="bg-white rounded-2xl p-5 shadow-sm">
-                            <p class="font-semibold text-gray-800">
-                                Working Hypothesis
-                            </p>
-                            <p class="mt-2 text-gray-700 leading-relaxed">
-                                I hypothesized that the germinal center microenvironment possesses an inherent capacity
-                                to
-                                spontaneously eliminate B-cell lymphomas arising from replication stress and AID-induced
-                                genomic instability.
-                            </p>
-                        </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl w-full">
 
-                        <!-- Approach -->
-                        <div class="space-y-4 leading-relaxed text-gray-900">
-                            <p>
-                                To identify such tumor-suppressive mechanisms, I employed the <strong>Raji cell
-                                    line</strong>,
-                                a well-established human Burkitt’s lymphoma model, and exposed it to
-                                <strong>4 mM hydroxyurea (HU)</strong> to induce DNA replication stress analogous to
-                                that
-                                experienced during GC reactions. This stress-based screening strategy was designed to
-                                mimic
-                                physiological GC checkpoints that operate under conditions of intense proliferation and
-                                DNA
-                                damage.
-                            </p>
+                                    <!-- FIGURE A -->
+                                    <div class="relative aspect-[4/3]">
+                                        <span
+                                            class="absolute top-3 left-3 z-10 bg-black/70 text-white text-sm font-semibold px-3 py-1 rounded-md">
+                                            A
+                                        </span>
+                                        <img src="images/projects/project5_1.png"
+                                            class="w-full h-full object-contain rounded-2xl shadow-md hover:shadow-lg transition"
+                                            alt="Project 4 figure A" />
+                                    </div>
 
-                            <p>
-                                I then performed <strong>single-cell RNA sequencing</strong> in combination with
-                                <strong>chromatin immunoprecipitation (ChIP)</strong> targeting
-                                <strong>H3K4me3</strong>, a histone modification associated with transcriptionally
-                                active
-                                promoters. This integrated approach enabled high-resolution mapping of transcriptional
-                                and
-                                epigenetic responses to replication stress.
-                            </p>
-                        </div>
+                                    <!-- FIGURE B -->
+                                    <div class="relative aspect-[4/3]">
+                                        <span
+                                            class="absolute top-3 left-3 z-10 bg-black/70 text-white text-sm font-semibold px-3 py-1 rounded-md">
+                                            B
+                                        </span>
+                                        <img src="images/projects/project5_2.png"
+                                            class="w-full h-full object-contain rounded-2xl shadow-md hover:shadow-lg transition"
+                                            alt="Project 4 figure B" />
+                                    </div>
 
-                        <div class="w-full flex justify-center">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl w-full">
-
-                                <!-- FIGURE A -->
-                                <div class="relative aspect-[4/3]">
-                                    <img src="images/projects/project4_1.png"
-                                        class="w-full h-full object-contain rounded-2xl shadow-md hover:shadow-lg transition"
-                                        alt="GC-derived tumor suppression under replication stress – Figure A" />
                                 </div>
+                            </div>
 
-                                <!-- FIGURE B -->
-                                <div class="relative aspect-[4/3]">
-                                    <img src="images/projects/project4_2.png"
-                                        class="w-full h-full object-contain rounded-2xl shadow-md hover:shadow-lg transition"
-                                        alt="Proposed GC tumor-suppressive model – Figure B" />
-                                </div>
+                            <!-- ===================== -->
+                            <!-- FULL-WIDTH CAPTION BOX -->
+                            <!-- ===================== -->
+                            <div
+                                class="bg-white border border-gray-400 rounded-xl p-4 text-xs sm:text-sm leading-snug text-gray-800">
+
+                                <p><strong>(A)</strong> The schematic of germinal center reaction showing activated B
+                                    cells undergoing
+                                    somatic hypermutation and class switch recombination can undergo the
+                                    differentiation,
+                                    forming the memory and plasma B cells. Defective transformation in activated B cells
+                                    at the various stages in GC can lead to variety of lymphomas including the Mantle
+                                    cell
+                                    lymphoma (MCL), Burkitt’s lymphoma (BL), Follicular lymphoma (FL), diffuse large B
+                                    cell
+                                    lymphoma (DLBCL), chronic lymphocytic leukemia (B-CLL), and multiple myelomas (MM).
+                                    <br><br>
+                                    <strong>(B)</strong> Identification of alerted genes in Hydroxyurea treated Raji
+                                    cells for the
+                                    development of novel cancer therapeutic targets. RNA-seq data is shown.
+                                    Thy-Noc represents the group for thymidine and nocodazole treated cells as control
+                                    group.
+                                </p>
 
                             </div>
+
+
+                        </div>
+                        <p class="text-sm sm:text-base leading-relaxed text-gray-900">
+
+                            Inspired with GC biology and to identify tumor suppressor mechanisms from GC B cells,
+                            I utilized GC-derived B-cell lymphomas, Raji cells (Burkitt’s lymphoma) as a substrate.
+                            I treated Raji cells with hydroxyurea (HU) to mimic replication stress experienced by
+                            GC B cells followed by single-cell RNA sequencing and H3K4me3 chromatin
+                            immunoprecipitation (ChIP), a mark of transcriptionally active promoters.
+
+                            This approach allowed me to identify altered genes including epigenetic factors such as
+                            <strong>ATAD2</strong>, <strong>ATAD5</strong>, zinc finger proteins,
+                            E2/E3 ubiquitin ligases, DNA repair genes, and G-protein–coupled receptors,
+                            suggesting druggable chemotherapeutic targets were also identified from the screening
+                            (<a href="https://doi.org/10.1101/2024.12.19.628635" target="_blank"
+                                class="text-blue-700 underline hover:text-blue-900 transition">
+                                Gothwal et al., 2024
+                            </a>).
+
+                            One altered factor was MBD1, whose functional analysis revealed its significance in
+                            tumor suppression and the prevention of genomic instabilities on the
+                            <em>BCL6</em>-translocation hotspot
+                            (<a href="https://doi.org/10.1101/2025.03.13.643172" target="_blank"
+                                class="text-blue-700 underline hover:text-blue-900 transition">
+                                Gothwal et al., 2025
+                            </a>).
+
+                            This validates my screen for identification of novel tumor suppressors.
+                            My future research will focus on analyzing more factors from this screen
+                            (<a href="https://doi.org/10.1101/2024.12.19.628635" target="_blank"
+                                class="text-blue-700 underline hover:text-blue-900 transition">
+                                Gothwal et al., 2024
+                            </a>)
+                            and explore their therapeutic potential for hematological and solid cancer treatments.
+
+                        </p><!-- =============================== -->
+                        <!-- TABLE 1 TITLE -->
+                        <!-- =============================== -->
+                        <h3 class="text-sm sm:text-base font-semibold text-orange-700 mt-6 mb-3">
+                            Table 1: List of key germinal center derived B-lymphomas
+                        </h3>
+
+                        <!-- =============================== -->
+                        <!-- TABLE 1 (Responsive + Connected) -->
+                        <!-- =============================== -->
+                        <div class="overflow-x-auto rounded-xl border border-gray-400 bg-white shadow-sm">
+
+                            <table class="w-full text-sm text-left border-collapse">
+
+                                <!-- Header -->
+                                <thead class="bg-gray-100">
+                                    <tr>
+                                        <th class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Disease
+                                        </th>
+                                        <th class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Cell of Origin
+                                        </th>
+                                        <th class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Stage Relative to Germinal Center
+                                        </th>
+                                        <th class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Key Features Supporting Origin
+                                        </th>
+                                    </tr>
+                                </thead>
+
+                                <!-- Body -->
+                                <tbody>
+
+                                    <!-- Row 1 -->
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Mantle Cell Lymphoma (MCL)
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Naïve mature B cell (mantle zone B cell)
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Pre-Germinal Center
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            IgM/IgD, SOX11, usually <em>unmutated</em> or minimally mutated IgVH
+                                        </td>
+                                    </tr>
+
+                                    <!-- Row 2 -->
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Follicular Lymphoma (FL)
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Germinal center B cell (centrocyte/centroblast)
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Germinal Center
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            CD10⁺, BCL6⁺, <em>mutated</em> IgVH, GC gene expression profile
+                                        </td>
+                                    </tr>
+
+                                    <!-- Row 3 -->
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Diffuse Large B-Cell Lymphoma (DLBCL)
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Heterogeneous: GC B cell or post-GC B cell
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold">
+                                            GC or post-GC (depends on subtype)
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            GCB subtype vs ABC subtype (cell-of-origin classification)
+                                        </td>
+                                    </tr>
+
+                                    <!-- Row 4 -->
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Multiple Myeloma (MM)
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Long-lived plasma cell
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Post-Germinal Center
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Fully differentiated plasma cell, heavily mutated Ig genes
+                                        </td>
+                                    </tr>
+
+                                    <!-- Row 5 -->
+                                    <tr>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold">
+                                            B-Chronic Lymphocytic Leukemia (B-CLL)
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Antigen-experienced B cell (memory-like)
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2 font-semibold">
+                                            Pre- or Post-GC (two subtypes)
+                                        </td>
+                                        <td class="border border-gray-400 px-3 py-2">
+                                            Mutated vs unmutated IgVH defines GC experience
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
                         </div>
 
-
-                        <!-- Findings -->
-                        <div class="space-y-4 leading-relaxed text-gray-900">
-                            <p>
-                                This analysis revealed stress-responsive gene programs encompassing multiple druggable
-                                gene
-                                families, including <strong>zinc finger transcription factors</strong>,
-                                <strong>E2/E3 ubiquitin ligases</strong>, <strong>DNA repair regulators</strong>, and
-                                <strong>G-protein–coupled receptors</strong>. The coordinated regulation of these
-                                pathways
-                                suggests the existence of a conserved transcriptional network that governs survival
-                                versus
-                                elimination decisions in stressed GC B cells.
-                            </p>
-
-                            <p>
-                                Importantly, because many of the identified genes encode pharmacologically tractable
-                                proteins, this GC-based screening strategy highlights a rational framework for
-                                discovering
-                                novel chemotherapeutic targets directly from physiological tumor-suppression programs.
-                            </p>
-                        </div>
-
-                        <!-- Impact -->
-                        <div class="bg-white rounded-2xl p-5 shadow-sm">
-                            <p class="font-semibold text-gray-800">
-                                Impact & Future Direction
-                            </p>
-                            <p class="mt-2 text-gray-700 leading-relaxed">
-                                My future research will focus on defining how these candidate genes regulate tumor
-                                suppression versus tumor progression. This work identifies previously unrecognized
-                                mechanisms for eliminating pre-malignant B cells and uncovers novel therapeutic targets
-                                with
-                                potential relevance to both hematological malignancies and solid tumors. Ultimately,
-                                these
-                                findings support the development of stress-informed, precision-targeted cancer
-                                therapies.
-                            </p>
-                        </div>
 
                     </div>
                 </section>
 
-
                 <!-- ===================================================== -->
-                <!-- PROJECT 5 -->
+                <!-- PROJECT 6 -->
                 <!-- ===================================================== -->
-                <section class="bg-[#EDEEE7] rounded-3xl shadow">
+                <section class="bg-[#EDEEE7] rounded-3xl shadow overflow-hidden">
 
-                    <button class="accordion-btn w-full flex justify-between items-center px-6 py-5 text-left">
-                        <span class="font-semibold text-lg">
-                            5. Epigenetic regulation of BCL6 translocations and implications in novel cancer target
-                            therapies
+                    <!-- Accordion Header -->
+                    <button class="accordion-btn w-full flex justify-between items-center px-6 py-5 text-left
+         hover:bg-black/5 transition">
+
+                        <span class="font-semibold text-lg leading-snug">
+                            6. Immune dysregulation in Li-Fraumeni syndrome patients
                         </span>
-                        <span class="text-2xl transition-transform">+</span>
+
+                        <span class="text-2xl transition-transform accordion-icon">+</span>
                     </button>
 
-                    <div class="accordion-panel hidden px-6 pb-6 space-y-6">
+                    <!-- Accordion Content -->
+                    <div class="accordion-panel hidden px-6 pb-8 space-y-8">
 
-                        <p>
-                            Identification of MBD1 as a novel therapeutic target (Kanazawa University as an independent
-                            researcher)- I developed a unique approach using Raji cells to screen novel tumor
-                            suppression mechanisms. Raji is a germinal center (GC) derived-B-lymphoma. The GC-derived
-                            B-lymphomas are naturally suppressed in GCs, thus they could be informative on tumor
-                            suppressor mechanism if induced with genotoxic-stress, similar to B cells experience in GC
-                            microenvironment. I treated Raji with Hydroxyurea (HU), simulating a genotoxic stress as
-                            faced by GC B cells i.e. DNA-replication stress. Among several induced genes in HU-induced
-                            genotoxic stress in Raji cells MBD1, a gene encoding for DNA-CpG methylation-binding protein
-                            was induced. Functional analysis revealed that MBD1 suppresses genomic instabilities at the
-                            BCL6 locus, preventing BCL6 rearrangements. BCL6-translocations are observed in 31% of
-                            diffuse large B-cell lymphoma (DLBCL) and other cancers (Gothwal et al., 2024, In
-                            Preparation). MBD1 also inhibits IRF4 and PRDM1, key regulators of plasma B cell
-                            differentiation, suggesting its role in suppressing multiple myeloma (a plasma B cell
-                            malignancy). Furthermore, MBD1 depletion sensitized Raji cells to HU, gemcitabine, and
-                            etoposide, highlighting its potential as a therapeutic target in cancers resistant to DNA
-                            replication inhibitors.
+                        <!-- Paragraph 1 -->
+                        <p class="text-xs sm:text-base leading-relaxed text-gray-900">
+                            Li-Fraumeni syndrome is a hereditary cancer predisposition disorder caused by germline
+                            <strong><em>TP53</em></strong> mutations that often confer gain-of-function properties to
+                            p53 and drive
+                            early-onset malignancies. While the oncogenic role of mutant p53 is well established, its
+                            impact
+                            on adaptive immune function remains poorly understood.
                         </p>
 
-                        <div class="flex justify-center w-full">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl w-full">
-
-                                <!-- FIGURE A -->
-                                <div class="relative aspect-[4/3]">
-                                    <span
-                                        class="absolute top-3 left-3 z-10 bg-black/70 text-white text-sm font-semibold px-3 py-1 rounded-md">
-                                        A
-                                    </span>
-                                    <img src="images/projects/project5_1.png"
-                                        class="w-full h-full object-contain rounded-2xl shadow-md hover:shadow-lg transition"
-                                        alt="Project 5 figure A" />
-                                </div>
-
-                                <!-- FIGURE B -->
-                                <div class="relative aspect-[4/3]">
-                                    <span
-                                        class="absolute top-3 left-3 z-10 bg-black/70 text-white text-sm font-semibold px-3 py-1 rounded-md">
-                                        B
-                                    </span>
-                                    <img src="images/projects/project5_2.png"
-                                        class="w-full h-full object-contain rounded-2xl shadow-md hover:shadow-lg transition"
-                                        alt="Project 5 figure B" />
-                                </div>
-
+                        <!-- Figure -->
+                        <div class="flex justify-center">
+                            <div class="max-w-4xl w-full">
+                                <img src="images/projects/project6.png"
+                                    class="w-full object-contain rounded-2xl shadow-md"
+                                    alt="Immune dysregulation in Li-Fraumeni syndrome patients diagram">
                             </div>
                         </div>
 
-
-                        <div class="bg-white rounded-2xl p-5 text-sm leading-relaxed">
-                            MBD1 limits B cell lymphoma development and preserves genomic stability.
-                            <br><br>
-                            <strong>(A)</strong> Human Raji B cell lymphoma xenografts in nude mice exhibit reduced
-                            tumor growth
-                            following MBD1 depletion, indicating a tumor-suppressive role for MBD1.
-                            <br><br>
-                            <strong>(B)</strong> Proposed model illustrating the role of MBD1 in regulating germinal
-                            center (GC)-derived
-                            B cell lymphomas and maintaining genomic stability at the BCL6 locus (adapted from Gothwal
-                            et al., 2024). Under genotoxic stress, MBD1 suppresses BCL6 expression in B cells,
-                            potentially limiting BCL6-dependent lymphomagenesis in GCs. In parallel, MBD1 fine-tunes
-                            IRF4 regulation to support proper plasma cell differentiation, ensuring the fidelity and
-                            functional quality of the GC response.
-                        </div>
+                        <!-- Paragraph 2 -->
+                        <p class="text-xs sm:text-base leading-relaxed text-gray-900">
+                            In this project, I examined humoral immune responses using a Li-Fraumeni mouse model
+                            carrying the
+                            <em>Trp53R172H</em> mutation, equivalent to the <em>TP53R175H</em> mutation commonly found
+                            in patients
+                            (<a href="https://doi.org/10.64898/2026.01.21.700937" target="_blank"
+                                class="text-blue-700 underline hover:text-blue-900 transition">
+                                Koichi et al., 2026
+                            </a>).
+                            Following immunization with sheep red blood cells, I analyzed germinal center responses to
+                            assess
+                            B cell activation. <em>Trp53R172H</em> mice exhibited reduced B cell activation during the
+                            early germinal
+                            center reaction. These results suggest that gain-of-function p53 mutations impair early B
+                            cell activation,
+                            potentially contributing to immune dysfunction in Li-Fraumeni patients and influencing
+                            susceptibility
+                            to autoimmune response and therapeutic responses.
+                        </p>
 
                     </div>
+
+
                 </section>
+
+
 
 
             </div>
